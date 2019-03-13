@@ -33,7 +33,13 @@ int displayTable(){
 
 	printf("  +---");
 	for(int x = 0; x<size;x++){
-		printf("----");
+		if(x<9){
+			printf("----");
+		}
+		else{
+			printf("---");
+		}
+
 	}
 
 	printf("\n");
